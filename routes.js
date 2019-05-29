@@ -106,22 +106,22 @@ routes.get('/ca/config.json', function(req, res) {
 
 // config ui
 routes.get('/ca/ui', function(req, res) {
-	return res.status(200).json({ result: "ui" });
+	res.render('pages/editModal');
 });
 
 // config ui
 routes.get('/ca/ui/edit', function(req, res) {
-	return res.status(200).json({ result: "ui/edit" });
+	res.render('pages/editModal');
 });
 
 // runnning modal
 routes.get('/ca/ui/modal', function(req, res) {
-	return res.status(200).json({ result: "ui/modal" });
+	res.render('pages/runningModal');
 });
 
 // running hover
 routes.get('/ca/ui/hover', function(req, res) {
-	return res.status(200).json({ result: "ui/hover" });
+	res.render('pages/runningHover');
 });
 
 export default routes;
