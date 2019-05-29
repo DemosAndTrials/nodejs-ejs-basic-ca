@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+.idea
+.env
+package-lock.json
+src/config/key.pem
+stats.json
+.vscode
+.env
+dist/
