@@ -92,7 +92,7 @@ routes.get('/ca/config.json', function(req, res) {
         configModal: {
           height: "600",
           width: "800",
-          url: host + "/ca/ui?numSteps=1"
+          url: host + "/ca/ui?numSteps=3"
         },
         runningModal: {
           url: host + "/ca/ui/modal"

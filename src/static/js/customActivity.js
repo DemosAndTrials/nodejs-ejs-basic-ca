@@ -36,14 +36,14 @@ define(['postmonger'], function (Postmonger) {
         connection.trigger('ready');
 
         // TODO just for testing
-        //console.log("*** trigger other events ***");
-        //connection.trigger('requestEndpoints');
-        //connection.trigger('requestTokens');
+        console.log("*** trigger other events ***");
+        connection.trigger('requestEndpoints');
+        connection.trigger('requestTokens');
 
-        //console.log("requestInteraction ");
-        //connection.trigger('requestInteraction');
-        //console.log("requestTriggerEventDefinition ");
-        //connection.trigger('requestTriggerEventDefinition');
+        console.log("requestInteraction ");
+        connection.trigger('requestInteraction');
+        console.log("requestTriggerEventDefinition ");
+        connection.trigger('requestTriggerEventDefinition');
     });
 
     // - Broadcast in response to the first ready event called by the custom application.
