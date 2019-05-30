@@ -24,5 +24,15 @@ app.use(express.static(path.join(__dirname, "static")));
 // set routes
 app.use('/', Routes);
 
-app.listen(8080);
-console.log('8080 is the magic port');
+/**
+ * PORT
+ */
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, (err) => {
+    if (err) {
+        console.error(err);
+    }
+    else {
+        console.log(`Server Running on port: ${PORT}`);
+    }
+});
