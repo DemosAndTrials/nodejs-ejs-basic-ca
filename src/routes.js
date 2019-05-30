@@ -100,7 +100,7 @@ routes.get('/ca/config.json', function(req, res) {
             }
         }
     };
-	console.log("config.json: ", jsons);
+	console.log("config.json: ", json);
 	return res.status(200).json(json);
 });
 
@@ -114,7 +114,7 @@ routes.get('/ca/ui/edit', function(req, res) {
 	res.render('pages/editModal');
 });
 
-// runnning modal
+// running modal
 routes.get('/ca/ui/modal', function(req, res) {
 	res.render('pages/runningModal');
 });
