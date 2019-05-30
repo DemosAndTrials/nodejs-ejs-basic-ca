@@ -267,26 +267,6 @@ define(['postmonger'], function (Postmonger) {
         connection.trigger('updateActivity', inArgPayload);
         //
         console.log('payload ', JSON.stringify(inArgPayload));
-
-        //$('form#genericActivity').submit();
-        // post arguments
-        post(inArgPayload['arguments'].execute.inArguments);
-    }
-
-    //
-    // Post to controller
-    //
-    function post(args) {
-        console.log('*** post ***');
-        $.post(
-            "ca/save",
-            args,
-            function (data) {
-                console.log("data: ", data);
-                alert(data);
-                $('#stage').html(data);
-            }
-        );
     }
 
     /**
